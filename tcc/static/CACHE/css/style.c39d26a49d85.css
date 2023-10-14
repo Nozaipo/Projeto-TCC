@@ -1,0 +1,26 @@
+/* line 5, templates/static/base/scss/style.scss */
+body {
+  background-color: #ebebde; }
+
+/* line 9, templates/static/base/scss/style.scss */
+#nav-bar {
+  background-color: #777764;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+  /* line 15, templates/static/base/scss/style.scss */
+  #nav-bar li {
+    float: left; }
+    /* line 17, templates/static/base/scss/style.scss */
+    #nav-bar li a {
+      display: block;
+      font-size: 1.2rem;
+      color: #4f4747;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none; }
+      /* line 24, templates/static/base/scss/style.scss */
+      #nav-bar li a:hover {
+        color: #ecebeb;
+        transition: color 0.5s ease; }

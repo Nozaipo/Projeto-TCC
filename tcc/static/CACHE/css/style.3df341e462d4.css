@@ -1,0 +1,21 @@
+/* line 3, templates/static/projeto_tcc/scss/style.scss */
+#nav-bar {
+  background-color: #3b18b9;
+  color: #3b18b9;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+  /* line 10, templates/static/projeto_tcc/scss/style.scss */
+  #nav-bar li {
+    float: left; }
+    /* line 12, templates/static/projeto_tcc/scss/style.scss */
+    #nav-bar li a {
+      display: block;
+      color: #3b18b9;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none; }
+  /* line 20, templates/static/projeto_tcc/scss/style.scss */
+  #nav-bar:hover {
+    background-color: #ecebeb; }
