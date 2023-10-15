@@ -1,0 +1,1 @@
+manage.py sass templates/static/scss templates/static/css --watch

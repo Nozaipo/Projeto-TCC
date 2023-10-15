@@ -23,7 +23,7 @@ class Risk(models.Model):
         return self.date_creatio
     
 class Form(models.Model):
-    risks_observed = models.ManyToManyField(Risk)
+    risks_observed = models.ManyToManyField(Risk, related_name='risks_observed')
     who_applied = models.CharField(max_length=100)
     date_creation = models.DateField(default=timezone.now())
     observations = models.CharField(max_length=250, blank=True)

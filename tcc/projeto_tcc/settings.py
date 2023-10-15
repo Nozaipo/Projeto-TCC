@@ -27,7 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'checklist',
-    'compressor'
+    'django_sass',
 ]
 
 MIDDLEWARE = [
@@ -109,17 +109,23 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/') 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'templates/static'), )
-STATICFILES_FINDERS = (
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'compressor.finders.CompressorFinder',
-)
-COMPRESS_PRECOMPILERS = (    
-    ('text/x-scss', 'django_libsass.SassCompiler'),
-)
+# STATICFILES_FINDERS = (
+#     'django.contrib.staticfiles.finders.FileSystemFinder',
+#     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+#     'compressor.finders.CompressorFinder',
+# )
+# COMPRESS_PRECOMPILERS = (    
+#     ('text/x-scss', 'django_libsass.SassCompiler'),
+# )
+
+# COMPRESS_ENABLED = True
+# COMPRESS_OFFLINE = True
 
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL = 'checklist'
+LOGOUT_REDIRECT_URL = 'checklist'

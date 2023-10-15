@@ -1,8 +1,8 @@
 {% extends 'base.html'%}
 {% load static %}
 
-{% block extra_head%}
-<link rel="stylesheet" type="text/x-scss" href="{% static 'checklist/scss/style.scss' %}">
+{% block css%}
+<link rel="stylesheet" href="{% static 'css/checklist.css' %}">
 {% endblock%}
 
 {% block content%}
@@ -14,7 +14,7 @@
             </div>
         </div>
 
-        <form action="{% url 'risks_observed' %}" method="post">
+        <form action="{% url 'save_record' %}" method="post">
             {% csrf_token %}
             <div class="row justify-content-center">
                 <div class="col-md-4">
@@ -32,13 +32,11 @@
                     </div>
                 </div>
             </div>
-            <div  class="row justify-content-center my-5">
-                <button type="submit">SALVAR</button>
+            <div class="row justify-content-center my-5">
+                <button class="save-button" type="submit">SALVAR</button>
             </div>
         </form>
     </div>
 
 </section>
-
-
 {% endblock %}

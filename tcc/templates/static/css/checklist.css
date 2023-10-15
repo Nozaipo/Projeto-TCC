@@ -1,0 +1,164 @@
+a {
+  transition: .3s all ease;
+  color: #5c5c59;
+}
+
+a:hover, a:focus {
+  text-decoration: none !important;
+  outline: none !important;
+  box-shadow: none;
+}
+
+button {
+  transition: .3s all ease;
+}
+
+button:hover, button:focus {
+  text-decoration: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.ftco-section {
+  padding: 7em 0;
+}
+
+.ftco-no-pt {
+  padding-top: 0;
+}
+
+.ftco-no-pb {
+  padding-bottom: 0;
+}
+
+.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.wrap {
+  padding: 30px 30px 10px 30px;
+  background: #5c5c59;
+  border-radius: 4px;
+}
+
+ul.ks-cboxtags {
+  list-style: none;
+  padding: 20px;
+}
+
+ul.ks-cboxtags li {
+  display: block;
+}
+
+ul.ks-cboxtags li label {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #404040;
+  font-size: 18px;
+  border-radius: 4px;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all .3s;
+  display: block;
+}
+
+ul.ks-cboxtags li label {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+ul.ks-cboxtags li label::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "FontAwesome";
+  font-weight: 900;
+  font-size: 24px;
+  padding: 0;
+  margin-right: 15px;
+  content: "\f1db";
+  color: rgba(0, 0, 0, 0.2);
+  transition: transform .3s ease-in-out;
+  position: absolute;
+  right: 50px;
+  margin-top: -5px;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+  content: "\f058";
+  transition: transform .3s ease-in-out;
+  color: #5c5c59;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+  transition: all .2s;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+  display: absolute;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.save-button {
+  appearance: none;
+  background-color: #5c5c59;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.save-button:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.save-button:hover {
+  background-color: #666655;
+}
+
+.save-button:focus {
+  box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
+  outline: none;
+}
+
+.save-button:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: default;
+}
+
+.save-button:active {
+  background-color: #5c5c59;
+  box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+}

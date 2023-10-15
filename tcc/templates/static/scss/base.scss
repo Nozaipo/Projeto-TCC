@@ -1,0 +1,31 @@
+// $primary: #777764;
+$primary: #5c5c59;
+$font-color: #fff;
+$background-color: #fff;
+
+body {
+    background-color: $background-color;
+}
+
+#nav-bar {
+    background-color: $primary;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    li {
+        float: left;
+        a {
+            display: block;
+            font-size: 16px;
+            color: $font-color;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            &:hover {
+                color: rgb(175, 170, 170);
+                transition: color 0.5s ease;
+            }
+        }
+    }
+}
