@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block title%}Base de Conhecimento{% endblock %}
+
+{% block css%}
+<link rel="stylesheet" href="{% static 'css/checklist.css' %}">
+{% endblock%}
+
+{% block content%}
+
+{% include 'knowledge_btn.html' %}
+FMEA
+{% endblock %}
+
+{% block scripts%}
+{% endblock %}

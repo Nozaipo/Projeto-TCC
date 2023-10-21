@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block title%}Base de Conhecimento{% endblock %}
+
+{% block css%}
+<link rel="stylesheet" href="{% static 'css/checklist.css' %}">
+{% endblock%}
+
+{% block content%}
+
+<div class="d-flex justify-content-center">
+    <p>ESCOLHA QUAL CONTEÚDO DESEJA ACESSAR NA BASE DE CONHECIMENTO</p>
+</div>
+
+{% include 'knowledge_btn.html' %}
+
+{% endblock %}
+
+{% block scripts%}
+{% endblock %}

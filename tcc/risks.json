@@ -1,0 +1,102 @@
+{
+    "Falta": {
+        "severity_occurrence": 8,
+        "chance_detection": 5,
+        "frequency_occurrence": 8,
+        "action_plan": ["Quebra severa do Plano de Tratamento", "Requer afastamento da criança do programa se houver duas reincidências seguidas sem justificativa." , "Em ocorrências isoladas, efetivar comunicado escrito aos responsáveis sobre ciência das faltas e consequências."],
+        "contingency_measure": ["Relatório de afastamento arquivado em local determinado."]
+    },
+    "Alimentação < 1h": {
+        "severity_occurrence": 6,
+        "chance_detection": 6,
+        "frequency_occurrence": 8,
+        "action_plan": ["Aumenta risco de vômitos, refluxo e aspiração.", "Evitar manobras que aumentem a pressão intra-abdominal.", "Preferir atender com elevação da cabeceira de no mínimo 45º.", "Explicar verbalmente sobre os riscos da alimentação próxima dos atendimentos."],
+        "contingency_measure": ["Mudar horário de atendimento aumentando o tempo entre a alimentação e o atendimento."]
+    },
+    "Descontinuidade": {
+        "severity_occurrence": 6,
+        "chance_detection": 5,
+        "frequency_occurrence": 7,
+        "action_plan": ["Descumprimento de parte significativa do plano terapêutico proposto.", "A evolução tem menor chance de êxito.", "Requer esclarecer a importância para o cuidador.", "Checar entendimento das orientações domiciliares por meio de atendimento assistido pelo responsável uma vez por mês."],
+        "contingency_measure": ["Encaminhar ao serviço de Psicologia."]
+    },
+    "Sonolência": {
+        "severity_occurrence": 8,
+        "chance_detection": 6,
+        "frequency_occurrence": 4,
+        "action_plan": ["Impõe lentidão ou não resposta aos comandos.", "A evolução do paciente tem menor chance de êxito.", "Checar se há interação com medicamentos e ajustar horários."],
+        "contingency_measure": ["Encaminhar para neurologista com urgência."]
+    },
+    "Hipotonia": {
+        "severity_occurrence": 6,
+        "chance_detection": 8,
+        "frequency_occurrence": 4,
+        "action_plan": ["Impossibilita ou demanda maior esforço para aplicar algumas técnicas e posturas.", "Impõe uma expectativa menor de bons resultados.", "Propõe-se iniciar terapia com estímulos sensoriais que aumentem o estado de alerta."],
+        "contingency_measure": ["Uso de talas extensoras, órteses e cintas para melhorar postura da criança durante os atendimentos e em casa."]
+    },
+    "Choro": {
+        "severity_occurrence": 8,
+        "chance_detection": 7,
+        "frequency_occurrence": 4,
+        "action_plan": ["Reduz resposta ao PT.", "Requer reprogramar interação da mãe no atendimento e ou local de atendimento."],
+        "contingency_measure": ["Alterar local de atendimento para área preparada."]
+    },
+    "Vinculo excessivo com a mãe": {
+        "severity_occurrence": 7,
+        "chance_detection": 7,
+        "frequency_occurrence": 4,
+        "action_plan": ["Dificulta e ou impossibilita executar as atividades do PT.", "Requer reprogramar interação da mãe no atendimento e solicitar orientação da psicóloga no atendimento."],
+        "contingency_measure": ["Encaminha ao serviço de Psicologia."]
+    },
+    "Necessidade de órtese": {
+        "severity_occurrence": 6,
+        "chance_detection": 8,
+        "frequency_occurrence": 4,
+        "action_plan": ["Impõe limitações aos movimentos, reduzindo as atividades possíveis para a terapia.", "Propõe-se utilizar órteses disponíveis no serviço para auxílio no atendimento. ", "Encaminhar para oficinas ortopédicas e/ou disponibilizar contato de ortesista."],
+        "contingency_measure": ["Empréstimo de órteses do serviço para utilização em domicílio."]
+    },
+    "Sialorréia intensa": {
+        "severity_occurrence": 6,
+        "chance_detection": 7,
+        "frequency_occurrence": 4,
+        "action_plan": ["Oferece sujidades no material utilizado, devendo ser limpos antes do próximo atendimento, aumentando custos e tempo.", "Certificar-se do uso de EPIs e lençol individual.", "Sugerir não ofertar alimentos ricos em carboidratos até uma hora antes do atendimento."],
+        "contingency_measure": ["Sugerir que o primeiro atendimento seja com o fonoaudiólogo. ", "Quando viável, sugerir uso de bandagem elástica."]
+    },
+    "Rigidez articular" : {
+        "severity_occurrence": 7,
+        "chance_detection": 7,
+        "frequency_occurrence": 4,
+        "related risks": ["Encurtamento", "Espasticidade intensa"],
+        "action_plan": ["Impossibilita ou demanda maior esforço para aplicar algumas técnicas e posturas.", "Propõe-se uso de prancha ortostática antes dos atendimentos.", "Preferência de iniciar PT com a fisioterapia e uso de talas extensoras e órtese quando necessário.", "Incentivar uso de órteses e talas em domicílio."],
+        "contingency_measure": ["Encaminhar ao neurologista e/ou ortopedista e/ou para avaliação de aplicação de Toxina Botulínica para espasticidade."]
+    },
+    "Agitação" : {
+        "severity_occurrence": 7,
+        "chance_detection": 7,
+        "frequency_occurrence": 4,
+        "action_plan": ["Diminuição da atenção necessária a terapia aumenta riscos de acidentes." ,"Requer colocar barreira física, limitando a área de atendimento."],
+        "contingency_measure": ["Alterar local de atendimento para área preparada."]
+    },
+    "Apatia" : {
+        "severity_occurrence": 6,
+        "chance_detection": 7,
+        "frequency_occurrence": 4,
+        "action_plan": ["A lentidão ou não resposta aos comandos dificulta o êxito do PT.", "Buscar aumentar o alerta iniciando os atendimentos por meio de estímulos vestibulares e ou proprioceptivos."],
+        "contingency_measure": ["Priorizar o atendimento da fisioterapia ou T.O.", "Aumentar estímulos sensoriais de alerta."]
+    },
+    "Sustento cefálico deficiente" : {
+        "severity_occurrence": 7,
+        "chance_detection": 7,
+        "frequency_occurrence": 4,
+        "action_plan": ["Dificultar a permanência em posturas que devem ser estimuladas.", "Propõe-se iniciar terapia com atividades que estimulem extensão e controle de cabeça nas posturas pronada e sentada, e transferência de deitado para sentado."],
+        "contingency_measure": ["Priorizar o atendimento da Fisioterapia e Terapia Ocupacional."]
+    },
+    "Alteração sensorial L" : {
+        "severity_occurrence": 7,
+        "chance_detection": 7,
+        "frequency_occurrence": 4,
+        "related risks": ["Alteração sensorial M", "Alteração sensorial G"],
+        "action_plan": ["Alguns dos estímulos utilizados na terapia podem causar desconforto a criança quando estimulado, dificultando a execução do PT.", "Realizar atividades que estimulem múltiplas sensações favorecendo a integração sensorial."],
+        "contingency_measure": ["Priorizar o atendimento da terapeuta ocupacional"]
+    }
+}

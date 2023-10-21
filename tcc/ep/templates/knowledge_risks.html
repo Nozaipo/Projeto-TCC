@@ -1,0 +1,51 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block title%}Base de Conhecimento{% endblock %}
+
+{% block css%}
+<link rel="stylesheet" href="{% static 'css/checklist.css' %}">
+{% endblock%}
+
+{% block content%}
+
+{% include 'knowledge_btn.html'%}
+
+<table class="table table-hover table-fixed">
+    <thead class="thead-dark text-center">
+        <tr>
+            <th scope="col">Vulnerabilidade</th>
+            <th scope="col">Plano de Ação</th>
+            <th scope="col">Medidas de Contingência</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for risk in risks %}
+            <tr>
+                <td class="text-centers">{{risk.get_risk_name}}</td>
+                <td>
+                    <div>
+                        <ul>
+                            {% for action in risk.action_plan%}  
+                                <li>{{action}}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <ul>
+                            {% for contingency in risk.contingency_measures%}  
+                                <li>{{contingency}}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+
+{% block scripts%}
+{% endblock %}
