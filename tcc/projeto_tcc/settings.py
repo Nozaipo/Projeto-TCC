@@ -127,5 +127,6 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'templates/static'), )
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LOGIN_REDIRECT_URL = 'checklist'
-LOGOUT_REDIRECT_URL = 'checklist'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+DATETIME_FORMAT="%Y-%m-%d%H:%M:%S"

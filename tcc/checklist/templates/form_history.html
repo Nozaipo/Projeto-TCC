@@ -1,0 +1,40 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block title%}HISTÓRICO{% endblock %}
+
+{% block css%}
+<link rel="stylesheet" href="{% static 'checklist/css/checklist.css' %}">
+{% endblock%}
+
+{% block content%}
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Data</th>
+        <th scope="col">Quem aplicou</th>
+        <th scope="col">Riscos Observados</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for form in forms %}
+        <tr>
+          <th scope="row">{{form.date_creation}}</th>
+          <td>{{form.who_applied}}</td>
+          <td>
+            <div>
+              <ul>
+                {% for risk in form.risks_observed.values %}  
+                  <li>{{risk.risk_name}}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
+
+{% block scripts%}
+{% endblock %}

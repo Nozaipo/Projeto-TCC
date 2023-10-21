@@ -8,7 +8,7 @@ class Risk(models.Model):
     severity_occurrence = models.IntegerField()
     chance_detection = models.IntegerField()
     active = models.BooleanField(default=1)
-    date_creation = models.DateField(default=timezone.now())
+    date_creation = models.DateField(default=timezone.now)
 
     def __str__(self):
         return self.risk_name
@@ -25,8 +25,11 @@ class Risk(models.Model):
 class Form(models.Model):
     risks_observed = models.ManyToManyField(Risk, related_name='risks_observed')
     who_applied = models.CharField(max_length=100)
-    date_creation = models.DateField(default=timezone.now())
+    date_creation = models.DateField(default=timezone.now)
     observations = models.CharField(max_length=250, blank=True)
+
+    class Meta:
+        ordering = ['-date_creation']
 
     def __str__(self):
         return self.who_applied

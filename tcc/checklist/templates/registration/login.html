@@ -1,9 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}
-  Login
-{% endblock %}
+{% block title %}LOGIN{% endblock %}
 
 {% block css %}
   <link rel="stylesheet" href="{% static 'css/login.css' %}" />
@@ -20,17 +18,21 @@
             </div>
             <h3 class="text-center mb-4">Faça seu login</h3>
             <form action="{% url 'login' %}" method="POST">{% csrf_token %}
-              <!-- Email input -->
-              <div class="form-group mb-4">
-                <label class="form-label" for="uname">Usuário</label>
-                <input type="text" id="uname" name="uname" class="form-control" />
+            
+              <div class="d-inline-flex m-2">
+                <div class="form-group mb-4">
+                  <label class="form-label">{{form.username.label_tag}}</label>
+                  <label class="form-label">{{form.password.label_tag}}</label>
+                  <!-- <input type="text" id="uname" name="uname" class="form-control" /> -->
+                </div>
+                
+                <div class="form-group mb-4">
+                  <span class="form-label m-2">{{form.username}}</span>
+                  <label class="form-label m-2">{{form.password}}</label>
+                  <!-- <input type="password" id="psw" name="psw" class="form-control" /> -->
+                </div>
               </div>
-
-              <!-- Password input -->
-              <div class="form-group mb-4">
-                <label class="form-label" for="psw">Senha</label>
-                <input type="password" id="psw" name="psw" class="form-control" />
-              </div>
+              
 
               <!-- 2 column grid layout for inline styling -->
               {% comment %} <div class="row mb-4">
@@ -50,8 +52,9 @@
 
               <!-- Submit button -->
 
-              <div class="form-group">
-                <button type="submit" class="btn-login d-flex justify-content-center">Entrar</button>
+              <div class="form-group d-flex justify-content-center">
+                <button type="submit" class="btn-login">Entrar</button>
+                <input type="hidden" name="next" value="{{ next }}" />
               </div>
               {% comment %} <button type="submit" class="btn btn-primary btn-block mb-4 btn-login">Entrar</button> {% endcomment %}
 

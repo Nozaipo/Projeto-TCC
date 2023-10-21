@@ -14,6 +14,14 @@ def checklist(request):
 	all_risks = Risk.objects.filter(active=1)
 	return render(request, 'checklist.html', {'risks': all_risks})
 
+def form_history(request):
+	all_forms = Form.objects.all()
+	return render(request, 'form_history.html', {'forms': all_forms})
+
+def clear(request):
+	Form.objects.all().delete()
+	return HttpResponseRedirect('/')
+
 @login_required
 def save_record(request):
 	print(request.POST.getlist('risk'))
@@ -29,7 +37,7 @@ def save_record(request):
 	
 	# form.save()
 
-	return HttpResponse(request.user.get_full_name())
+	return HttpResponseRedirect('/')
 
 def web_login(request):
 	if request.method == 'GET':
